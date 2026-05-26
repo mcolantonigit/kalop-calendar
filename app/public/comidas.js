@@ -37,7 +37,6 @@ document.getElementById("busqueda-form").addEventListener("submit",async (e)=>{
         ...Array.from(resCompleta).filter(el => el.tag.toLowerCase().includes(busqueda.toLowerCase())),
         ...Array.from(resCompleta).filter(el => el.nombre.toLowerCase().includes(busqueda.toLowerCase()))
     ];
-    console.log(filtrado);
     const vistos = new Set(); //se genera una estructura "SET" que solo permite valores unicos (quitando duplicados)
     
     const arraySinDup = filtrado.filter(obj => { //generas un array nuevo que va a contener los objetos sin duplicados y filtras el array en crudo
@@ -54,15 +53,12 @@ document.getElementById("busqueda-form").addEventListener("submit",async (e)=>{
     for(objeto of resCompleta){
         const target = document.getElementsByClassName(objeto.tag);
         const encontrado = arraySinDup.find(obj => obj.tag === objeto.tag);
-        console.log("valor de Encontrado: ", encontrado);
         if(!encontrado){
             target[0].classList.toggle("escondido",true);
-            console.log(objeto, "Escondido")
 
         }
         else{
             target[0].classList.toggle("escondido",false);
-            console.log(objeto, "mostrado")
         }
     }
     return;
@@ -92,7 +88,6 @@ document.getElementsByClassName("btn-agregar")[0].addEventListener("click",(e)=>
 
 //CUANDO SE CARGA UNA IMAGEN, EL EVENTO QUE SIGUE SE ENCARGA DE HACERLA VISIBLE EN SU LABEL
 document.addEventListener("change", (e) => {  //EventHandler que detecta cualquier cambio en values dentro del documento
-    console.log(e);
     if (!e.target.classList.contains("celda-foto")) return; //analiza si el target del evento tiene una class de nombre "celda-foto"
     const file = e.target.files[0]; //
     if (!file) return;
@@ -110,7 +105,6 @@ document.addEventListener("click",(e)=>{
     const objetivoFull = e.target.id;
     const objetivo = objetivoFull.substring(7);
     const casillaComida = document.querySelector(`.${objetivo}`);
-    console.log(casillaComida);
     if(casillaComida.classList.contains("borrado-pendiente")){
         casillaComida.classList.toggle("borrado-pendiente",false);
     }
@@ -155,7 +149,6 @@ document.getElementById("comidas-form").addEventListener("submit", async (e)=>{
     for(comidas of datosDeCarga){
 
         const duplicado = datosDeCarga.filter(obj => obj.tag == comidas.tag)
-        console.log(duplicado.length);
         if(duplicado.length>1) {
             alert(`El valor Tag ${comidas.tag} ya se encuentra en uso.`);
             return;
@@ -164,7 +157,6 @@ document.getElementById("comidas-form").addEventListener("submit", async (e)=>{
 
     formData.append("data", JSON.stringify(datosDeCarga));
 
-    console.log(datosDeCarga);
 
     await fetch("/api/escribircomidas", {
         method: "POST",

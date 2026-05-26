@@ -2,7 +2,6 @@ const mensajeError = document.getElementsByClassName("error")[0];
 
 document.getElementById("change-form").addEventListener("submit",async(e)=>{
     e.preventDefault();
-    console.log(e)
     const currentPass = e.target.querySelector("#current-password").value;
     const newPass = e.target.querySelector("#new-password").value;
     const newPass2 = e.target.querySelector("#new-password2").value;

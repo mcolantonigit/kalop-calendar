@@ -2,7 +2,6 @@ const mensajeError = document.getElementsByClassName("error")[0];
 
 document.getElementById("restore-form").addEventListener("submit",async(e)=>{
     e.preventDefault();
-    console.log(e)
     const userAndMail = e.target.querySelector("#userAndMail").value;
     const pin = e.target.querySelector("#pin").value;
 
@@ -53,7 +52,6 @@ document.getElementById("restore-form").addEventListener("submit",async(e)=>{
         if(res.ok) {
             const elementosSolicitar = document.querySelectorAll(".solicitar");
             const elementosValidar = document.querySelectorAll(".validar");
-            console.log(elementosValidar);
             for(elemento of elementosSolicitar){
                 elemento.classList.toggle("escondido", true);
             }

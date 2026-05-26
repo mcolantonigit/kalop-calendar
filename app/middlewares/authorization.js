@@ -13,7 +13,6 @@ async function soloAdmin(req,res,next){
 async function soloPublico(req,res,next){
     const logueado = await revisarCookie(req);
     if(!logueado) {
-        console.log("se lo envia a next")
         return next();
     }
     return res.redirect("/admin")
@@ -21,13 +20,10 @@ async function soloPublico(req,res,next){
 
 async function revisarCookie(req){
     if(!req.headers.cookie){
-        console.log("usuario sin cookie de login.")
         return false;
     }
     const cookieJWT = req.headers.cookie.split("; ").find(cookie => cookie.startsWith("jwt=")).slice(4);
-    console.log("Cookie", cookieJWT);
     const decodificada = jsonwebtoken.verify(cookieJWT,process.env.JWT_SECRET);
-    console.log("Cookie decodificada:", decodificada);
 
     const obtenerUsuarios = async () => {
             const usuarios = await userDB.getUsuarios();

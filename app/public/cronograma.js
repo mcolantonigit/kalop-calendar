@@ -81,10 +81,8 @@ document.getElementById("grilla-form").addEventListener("submit",async (e)=>{
     for(elemento of elementosFiltrados){
         cuerpo.push({"dia" : elemento.id, "comida" : elemento.value})
     };
-    console.log(cuerpo);
 
     try{
-        console.log("Hasta aca llego sin problemas.")
     const res = await fetch("/api/escribircronograma",{
         method: "POST",
         headers:{"Content-Type" : "application/json"},

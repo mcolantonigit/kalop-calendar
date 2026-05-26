@@ -2,7 +2,6 @@ const mensajeError = document.getElementsByClassName("error")[0];
 
 document.getElementById("register-form").addEventListener("submit",async(e)=>{
     e.preventDefault();
-    console.log(e)
     const res = await fetch ("/api/register",{
         method: "POST",
         headers:{

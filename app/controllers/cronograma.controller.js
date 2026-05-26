@@ -13,7 +13,6 @@ async function escribirCronograma(req,res){
     const mesActual = new Date().getMonth()+1;
     const diaActual = new Date().getDate();
     const updateCronograma = req.body;
-    console.log(updateCronograma);
 
 
     function esBisiesto(anio) {
@@ -58,7 +57,6 @@ async function escribirCronograma(req,res){
             if(diaDeLaSemana(dia,mes,anioActual)<=5){
                 let fechaAAgregar = mes*100+dia;
                 const coincidenciaCargra = updateCronograma.find(update => update.dia == fechaAAgregar);
-                console.log("variable coincidenciaCarga: ", coincidenciaCargra);
                 if(!coincidenciaCargra){
                     console.log("Intentaron actualizar el cronograma con datos incorrectos para el dia: ", fechaAAgregar);
                     return res.status(400).send({status:"error",message:"Intentaron actualizar el cronograma con datos incorrectos."});
@@ -75,7 +73,6 @@ async function escribirCronograma(req,res){
             };
         };
     };
-    console.log(carga);
     await userDB.saveCronograma(carga);
     res.send({status:"ok",message:"cronograma editado",})
 };

@@ -10,7 +10,6 @@ addEventListener("load",async(e)=>{
 })
 
 document.addEventListener("change", (e) => {  //EventHandler que detecta cualquier cambio en values dentro del documento
-    console.log(e);
     if (!e.target.classList.contains("celda-foto")) return; //analiza si el target del evento tiene una class de nombre "celda-foto"
     const file = e.target.files[0]; //
     if (!file) return;
@@ -35,8 +34,6 @@ document.getElementById("fondos-form").addEventListener("submit", async (e)=>{
         dataColores.push({"mes": `${Number(input)+1}`, "color" : `${inputsColores[input].value}`})
     }
 
-    console.log(dataColores);
-
     fondosDOM.forEach((casilla,index)=>{
         const imagen = casilla.querySelector(".celda-foto").files[0];
         let nombre = "";
@@ -46,7 +43,6 @@ document.getElementById("fondos-form").addEventListener("submit", async (e)=>{
                 nombre = `${index+1}${meses[index]}`}
             else{
                 nombre = `0${index+1}${meses[index]}`}
-            console.log("imagen detectada en mes: ",nombre)
             formData.append(`${nombre}`, imagen);
         }
     })

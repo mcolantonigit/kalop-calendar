@@ -56,26 +56,20 @@ addEventListener("load", async(e)=>{
     const body = document.body;
     body.style.backgroundImage = `url(images/${fondoSegunMes[mesActual-1]}.png)`;
 
-    console.log("cronogramaRecibido",cronogramaRecibido);
-    console.log("comidasRecibido",comidasRecibido);
     for(objeto of cronogramaRecibido){
         if(objeto.dia > limiteMinMes && objeto.dia <limiteMaxMes){
             const comidaBuscada = comidasRecibido.find(comida => comida.tag === objeto.comida);
-            console.log(comidaBuscada);
             cronogramaMes.push({"dia" : objeto.dia, "comida" : objeto.comida, "detalle" : comidaBuscada.nombre})
         }
     }
-    console.log(cronogramaMes);
 
     //dibuja celdas en blanco en la tabla de calendario para que coincidan con el rotulo de nombre.
     for(let i = 1 ; i < diaDeLaSemana(cronogramaMes[0].dia - (mesActual*100),mesActual,anioActual); i++){
         tablaCalendario.innerHTML += `<div class="blank"></div>`;
-        console.log("Creada celda vacia: ", i)
     }
 
     //dibujando la tabla del calendario
     for(objeto of cronogramaMes){
-        console.log("dia analizado: ",objeto.dia)
         if(objeto.dia-mesActual*100 == diaActual){
             tablaCalendario.innerHTML += 
                 `<div class="fondo" style="background-image: url('images/${objeto.comida}.png');">

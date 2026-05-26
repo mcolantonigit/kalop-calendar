@@ -10,7 +10,6 @@ const adminPassOk = "m3c4n1c426#"
 let blanqueos = [];
 
 async function login(req,res){
-    console.log(req.body);
         //TOMO VALORES DEL JSON QUE ALMACENA USUARIOS Y LOS PASO A UNA VARIABLE
     const obtenerUsuarios = async () => {
         const usuarios = await userDB.getUsuarios();
@@ -22,7 +21,6 @@ async function login(req,res){
     const password = req.body.password;
     if(!user || !password){
         return res.status(400).send({status:"error",message:"Los campos no pueden quedar vacios."});
-        console.log("Tiene campos vacios")
     }
 
     const usuarioARevisar = listaUsuarios.find(usuario => usuario.user === user);
@@ -31,7 +29,6 @@ async function login(req,res){
         return res.status(400).send({status:"error",message:"Usuario o contraseña incorrectos."})
     };
     const loginCorrecto = await bcryptjs.compare(password, usuarioARevisar.password);
-    console.log(loginCorrecto);
     if(!loginCorrecto){
         console.log("Un usuario intentó loggearse con una contraseña incorrecta: " + password);
         return res.status(400).send({status:"error",message:"Usuario o contraseña incorrectos."})
@@ -65,7 +62,6 @@ async function register(req,res){
 
     if(!user || !password || !mail || !adminpass){
         return res.status(400).send({status:"error",message:"Los campos no pueden quedar vacios."});
-        console.log("Tiene campos vacios")
     }
 
     const usuarioARevisar = listaUsuarios.find(usuario => usuario.user === user);
@@ -93,11 +89,7 @@ async function register(req,res){
         user, mail, password:hashPassword
     }
     
-    console.log(nuevoUsuario);
-    
     listaUsuarios.push(nuevoUsuario);
-
-    console.log(listaUsuarios);
 
     userDB.saveUsuarios(listaUsuarios);
 
@@ -116,17 +108,13 @@ async function passChange(req,res) {
     const currentPass = req.body.currentpassword;
     if(!newPass || !currentPass){
         return res.status(400).send({status:"error",message:"Los campos no pueden quedar vacios."});
-        console.log("Tiene campos vacios")
     }
 
     if(!req.headers.cookie){//---------------------------------ANALISIS DE COOKIE
         return res.status(400).send({status:"error",message:"usuario sin cookie de login."});
-        console.log("usuario sin cookie de login.")
     }
     const cookieJWT = req.headers.cookie.split("; ").find(cookie => cookie.startsWith("jwt=")).slice(4);
-    console.log("Cookie", cookieJWT);
     const decodificada = jsonwebtoken.verify(cookieJWT,process.env.JWT_SECRET);
-    console.log("Cookie decodificada:", decodificada);
 
     const usuarioARevisar = listaUsuarios.find(usuario => usuario.user === decodificada.user);
 
@@ -134,7 +122,6 @@ async function passChange(req,res) {
         return res.status(400).send({status:"error",message:"Cookie de login con parametros incorrectos."});
     }
     const loginCorrecto = await bcryptjs.compare(currentPass, usuarioARevisar.password);
-    console.log(loginCorrecto);
     if(!loginCorrecto){
         console.log("Un usuario intentó loggearse con una contraseña incorrecta: " + currentPass);
         return res.status(400).send({status:"error",message:"Contraseña actual incorrecta."})
@@ -156,7 +143,6 @@ async function passRestore(req,res) {
     const userAndMail = req.body.userandmail;
     const pin = req.body.pinvalidar;
     const step = req.body.step;
-    console.log(req.body);
 
     const obtenerUsuarios = async () => {
         const usuarios = await userDB.getUsuarios();
