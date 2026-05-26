@@ -18,7 +18,7 @@ function diaDeLaSemana(dia, mes, anio) {
 //----------------------------------------------Eventos de fetch y demas:
 
 addEventListener("load",async (e)=>{
-    const res = await fetch("http://192.168.20.70:4000/api/leercronograma");
+    const res = await fetch("/api/leercronograma");
     const resCompleta = await res.json();
     const cronogramaRecibido = resCompleta.cronograma;
     const comidasRecibido = resCompleta.comidas;
@@ -85,7 +85,7 @@ document.getElementById("grilla-form").addEventListener("submit",async (e)=>{
 
     try{
         console.log("Hasta aca llego sin problemas.")
-    const res = await fetch("http://192.168.20.70:4000/api/escribircronograma",{
+    const res = await fetch("/api/escribircronograma",{
         method: "POST",
         headers:{"Content-Type" : "application/json"},
         body: JSON.stringify(cuerpo)

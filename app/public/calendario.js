@@ -39,9 +39,9 @@ let mesEscrito = mesEsc[mesActual-1];
 titulo.innerHTML = `Menú - ${mesEscrito}`;
 
 addEventListener("load", async(e)=>{
-    const res = await fetch("http://192.168.20.70:4000/api/leercronograma");
+    const res = await fetch("/api/leercronograma");
     const resCompleta = await res.json();
-    const coloresActual = await fetch("http://192.168.20.70:4000/api/leerfondos");
+    const coloresActual = await fetch("/api/leerfondos");
     const coloresJson = await coloresActual.json();
     const colorInterfaz = coloresJson.find(color=> color.mes == mesActual);
     document.body.style.setProperty("--color-uno", `${colorInterfaz.color}`);

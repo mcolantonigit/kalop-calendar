@@ -3,7 +3,7 @@ const btnSubmit = document.querySelector(".btn-cambios");
 let resCompleta = [];
 
 addEventListener("load", async(e)=>{
-    const res = await fetch("http://192.168.20.70:4000/api/leercomidas");
+    const res = await fetch("/api/leercomidas");
     resCompleta = await res.json();
 
     for(objeto of resCompleta){
@@ -30,7 +30,7 @@ document.getElementById("busqueda-form").addEventListener("submit",async (e)=>{
     e.preventDefault();
     const busqueda = e.target.elements["barra-busqueda"].value;
 
-    const res = await fetch("http://192.168.20.70:4000/api/leercomidas");
+    const res = await fetch("/api/leercomidas");
     const resCompleta = await res.json();
 
     const filtrado = [
@@ -166,7 +166,7 @@ document.getElementById("comidas-form").addEventListener("submit", async (e)=>{
 
     console.log(datosDeCarga);
 
-    await fetch("http://192.168.20.70:4000/api/escribircomidas", {
+    await fetch("/api/escribircomidas", {
         method: "POST",
         body: formData
     })

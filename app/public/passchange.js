@@ -11,7 +11,7 @@ document.getElementById("change-form").addEventListener("submit",async(e)=>{
         alert("Los campos de nueva contraseña coinciden.");
         return;
     }
-    const res = await fetch ("http://192.168.20.70:4000/api/passchange",{
+    const res = await fetch ("/api/passchange",{
         method: "POST",
         headers:{
             "Content-Type" : "application/json"

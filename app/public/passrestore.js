@@ -7,7 +7,7 @@ document.getElementById("restore-form").addEventListener("submit",async(e)=>{
     const pin = e.target.querySelector("#pin").value;
 
     if(pin){
-        const res = await fetch ("http://192.168.20.70:4000/api/passrestore",{
+        const res = await fetch ("/api/passrestore",{
             method: "POST",
             headers:{
                 "Content-Type" : "application/json"
@@ -35,7 +35,7 @@ document.getElementById("restore-form").addEventListener("submit",async(e)=>{
         }
     }
     else{
-        const res = await fetch ("http://192.168.20.70:4000/api/passrestore",{
+        const res = await fetch ("/api/passrestore",{
             method: "POST",
             headers:{
                 "Content-Type" : "application/json"

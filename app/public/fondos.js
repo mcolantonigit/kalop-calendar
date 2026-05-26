@@ -1,7 +1,7 @@
 const btnSubmit = document.querySelector(".btn-cambios");
 
 addEventListener("load",async(e)=>{
-    const res = await fetch("http://192.168.20.70:4000/api/leerfondos");
+    const res = await fetch("/api/leerfondos");
     resCompleta = await res.json();
 
     const inputsColores = document.querySelectorAll(".celda-color");
@@ -51,7 +51,7 @@ document.getElementById("fondos-form").addEventListener("submit", async (e)=>{
         }
     })
     formData.append("data", JSON.stringify(dataColores));
-    await fetch("http://192.168.20.70:4000/api/escribirfondos", {
+    await fetch("/api/escribirfondos", {
         method: "POST",
         body: formData
     })
