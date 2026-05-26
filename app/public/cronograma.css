@@ -1,0 +1,188 @@
+html {
+  --s: 120px; /* control the size*/
+  --c1: #019de28e;
+  --c2: #ed71048e;
+  --c3: #ffffff;
+  
+  background:
+    conic-gradient(from 150deg at 50% 33%,#0000,var(--c1) .5deg 60deg,#0000 60.5deg) 
+      calc(var(--s)/2) calc(var(--s)/sqrt(2)),
+    conic-gradient(from -30deg at 50% 66%,#0000,var(--c2) .5deg 60deg,var(--c3) 60.5deg);
+  background-size: var(--s) calc(.5*var(--s)/tan(30deg));
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+h1{
+    margin: 10px;
+}
+
+p{
+    margin: 0;
+}
+
+.titulo{
+    text-align: center;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.596);
+    margin: 50px;
+}
+
+.barra-opciones{
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-items: end;
+    align-items: end;
+}
+
+.btn-submit{
+    grid-column: 2/3;
+}
+
+.grilla-form{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.panel-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+button, input, select{
+    padding: 0 15px;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+input, select{
+    border-bottom: 2px solid #019de2;
+    border-left: 5px solid #019de2;
+    border-right: none;
+    border-top: none;
+}
+
+button{
+    display: block;
+    width: 100%;
+    background-color: #019de2;
+    padding: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-style: bold;
+    font-size: large;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.sr-only{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.error{
+    color: red;
+    font-style: italic;
+    font-size: medium;
+}
+
+.escondido{
+    display: none;
+}
+
+.btn-volver{
+background-color:#ed7004;
+}
+
+.mes{
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 20px 10px;
+    grid-auto-rows: 30px;
+    padding: 20px;
+
+    border-radius: 5px;
+    border: 2px solid #ed7004;
+}
+
+legend{
+    padding: 10px;
+    text-align: center;
+}
+
+.btn-container{
+    position: relative;
+}
+
+.btn-cuadrado{
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+/*-------------MEDIA QUERIES------------------*/
+@media screen and (max-width:930px){
+    .grilla-form{
+        grid-template-columns: 1fr;
+    }
+}
+
+/*-------------ANIMACIONES------------------*/
+
+.guardado{
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    cursor: not-allowed;
+}
+
+.guardado::before{
+    content: "¡Guardado!";
+    position: absolute;
+    background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    green 50%,
+    transparent 100%
+    );
+    z-index: 100;
+    top: -110px;
+    left: -15px;
+    padding: 50px 50px;
+    animation-name: bajar;
+    animation-duration: 4s;
+    
+}
+
+@keyframes bajar {
+    0% {transform: translateY(0);}
+    30% {transform: translateY(75px);}
+    70% {transform: translateY(75px);}
+    100% {transform: translateY(140px);}
+}

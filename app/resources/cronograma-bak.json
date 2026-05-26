@@ -1,0 +1,1046 @@
+[
+  {
+    "dia": 101,
+    "comida": "sorrentinos"
+  },
+  {
+    "dia": 102,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 105,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 106,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 107,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 108,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 109,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 112,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 113,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 114,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 115,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 116,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 119,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 120,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 121,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 122,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 123,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 126,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 127,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 128,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 129,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 130,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 202,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 203,
+    "comida": "pechugas"
+  },
+  {
+    "dia": 204,
+    "comida": "tallarines-bolognesa"
+  },
+  {
+    "dia": 205,
+    "comida": "mila-napo"
+  },
+  {
+    "dia": 206,
+    "comida": "empanadas"
+  },
+  {
+    "dia": 209,
+    "comida": "tallarines-bolognesa"
+  },
+  {
+    "dia": 210,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 211,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 212,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 213,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 216,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 217,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 218,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 219,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 220,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 223,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 224,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 225,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 226,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 227,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 302,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 303,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 304,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 305,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 306,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 309,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 310,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 311,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 312,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 313,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 316,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 317,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 318,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 319,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 320,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 323,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 324,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 325,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 326,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 327,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 330,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 331,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 401,
+    "comida": "pollo-horno"
+  },
+  {
+    "dia": 402,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 403,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 406,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 407,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 408,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 409,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 410,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 413,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 414,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 415,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 416,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 417,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 420,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 421,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 422,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 423,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 424,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 427,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 428,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 429,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 430,
+    "comida": "mila-napo"
+  },
+  {
+    "dia": 501,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 504,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 505,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 506,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 507,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 508,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 511,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 512,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 513,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 514,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 515,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 518,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 519,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 520,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 521,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 522,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 525,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 526,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 527,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 528,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 529,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 601,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 602,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 603,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 604,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 605,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 608,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 609,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 610,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 611,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 612,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 615,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 616,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 617,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 618,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 619,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 622,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 623,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 624,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 625,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 626,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 629,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 630,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 701,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 702,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 703,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 706,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 707,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 708,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 709,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 710,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 713,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 714,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 715,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 716,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 717,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 720,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 721,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 722,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 723,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 724,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 727,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 728,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 729,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 730,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 731,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 803,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 804,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 805,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 806,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 807,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 810,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 811,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 812,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 813,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 814,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 817,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 818,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 819,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 820,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 821,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 824,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 825,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 826,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 827,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 828,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 831,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 901,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 902,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 903,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 904,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 907,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 908,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 909,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 910,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 911,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 914,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 915,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 916,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 917,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 918,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 921,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 922,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 923,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 924,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 925,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 928,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 929,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 930,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1001,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1002,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1005,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1006,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1007,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1008,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1009,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1012,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1013,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1014,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1015,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1016,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1019,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1020,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1021,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1022,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1023,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1026,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1027,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1028,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1029,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1030,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1102,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1103,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1104,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1105,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1106,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1109,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1110,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1111,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1112,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1113,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1116,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1117,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1118,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1119,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1120,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1123,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1124,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1125,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1126,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1127,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1130,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1201,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1202,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1203,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1204,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1207,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1208,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1209,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1210,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1211,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1214,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1215,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1216,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1217,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1218,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1221,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1222,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1223,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1224,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1225,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1228,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1229,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1230,
+    "comida": "sin-carga"
+  },
+  {
+    "dia": 1231,
+    "comida": "sin-carga"
+  }
+]

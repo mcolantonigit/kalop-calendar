@@ -1,0 +1,120 @@
+html {
+  --s: 120px; /* control the size*/
+  --c1: #019de28e;
+  --c2: #ed71048e;
+  --c3: #ffffff;
+  
+  background:
+    conic-gradient(from 150deg at 50% 33%,#0000,var(--c1) .5deg 60deg,#0000 60.5deg) 
+      calc(var(--s)/2) calc(var(--s)/sqrt(2)),
+    conic-gradient(from -30deg at 50% 66%,#0000,var(--c2) .5deg 60deg,var(--c3) 60.5deg);
+  background-size: var(--s) calc(.5*var(--s)/tan(30deg));
+}
+
+body{
+    margin: 0 40px;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+h1{
+    margin: 0;
+}
+
+.bienvenido{
+    text-align: center;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.596);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form+p, .tip{
+    text-align: center;
+}
+
+.legend-tip{
+    max-width: 360px;
+}
+.panel-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+button, input{
+    padding: 15px;
+    /*border: none;*/
+    font-size: large;
+    border-radius: 5px;
+}
+
+input{
+    border-bottom: 2px solid #019de2;
+    border-left: 5px solid #019de2;
+    border-right: none;
+    border-top: none;
+}
+
+button{
+    background-color: #019de2;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-style: bold;
+}
+
+.sr-only{
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.error{
+    color: red;
+    font-style: italic;
+    font-size: medium;
+}
+
+.btn-logout, .btn-volver, .btn-submit{
+    background-color: #ed7004;
+}
+
+.blue{
+    background-color: #019de2;
+}
+
+.escondido{
+    display: none !important;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.reveal{
+    font-weight: bold;
+    display: inline;
+    margin: 10px;
+    background-color: #c2bfbf;
+    padding: 5px;
+}

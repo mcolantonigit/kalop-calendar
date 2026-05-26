@@ -1,0 +1,12 @@
+[
+  {
+    "user": "admin",
+    "mail": "sistemas@kalop.com.ar",
+    "password": "$2b$05$kgQDfaJ9Gn6UULgraqE/XuKvvp31054lei5JbsvtpsFyTa1GgSErW"
+  },
+  {
+    "user": "alejandro",
+    "mail": "alejandro.nobili@kalop.com.ar",
+    "password": "$2b$05$fIXgrkCMjbNufxvbtFOI6OLOrs0DI0fJ5e7wVWXoczzspZX5h0zKq"
+  }
+]

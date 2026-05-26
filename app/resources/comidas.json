@@ -1,0 +1,86 @@
+[
+  {
+    "nombre": "Milanesa de carne a la napolitana",
+    "tag": "mila-napo"
+  },
+  {
+    "nombre": "Sorrentino de jamos y queso c/ estofado de pollo - 4 quesos - pesto",
+    "tag": "sorrentinos"
+  },
+  {
+    "nombre": "Pechugas a la plancha",
+    "tag": "pechugas"
+  },
+  {
+    "nombre": "Filet a la romana o matambre de cerdo al verdeo",
+    "tag": "filet-cerdo"
+  },
+  {
+    "nombre": "pizza y fainá",
+    "tag": "pizzas"
+  },
+  {
+    "nombre": "Tallarines c/ bolognesa - parisiene - crema - pesto",
+    "tag": "tallarines-bolognesa"
+  },
+  {
+    "nombre": "Milanesa de pollo a la fiorentina",
+    "tag": "mila-fiorentina"
+  },
+  {
+    "nombre": "Pan de carne c/ salsa de mostaza",
+    "tag": "pan-carne"
+  },
+  {
+    "nombre": "Milanesa de carne c/ ensalada de zanahoria y huevo",
+    "tag": "mila-ensalada"
+  },
+  {
+    "nombre": "canelones de verdura c/ salsa fileto y salsa blanca",
+    "tag": "canelones-verdura"
+  },
+  {
+    "nombre": "pollo a la provensal al horno",
+    "tag": "pollo-horno"
+  },
+  {
+    "nombre": "Tartas",
+    "tag": "tartas"
+  },
+  {
+    "nombre": "Asado banderita y chorizo bombon",
+    "tag": "asado-chorizo"
+  },
+  {
+    "nombre": "Ravioles de verdura c/ salsa fileto - crema y albahaca o pesto",
+    "tag": "ravioles-fileto"
+  },
+  {
+    "nombre": "empadanas",
+    "tag": "empanadas"
+  },
+  {
+    "nombre": "Feriado",
+    "tag": "cerrado"
+  },
+  {
+    "nombre": "Ñoquis tricolor c/ estofado - salsa bechamel - salsa putanesca o pesto",
+    "tag": "oquis-estofado"
+  },
+  {
+    "nombre": "Bifes anchos c/ salsa criolla y morrones asados",
+    "tag": "bifes-criolla"
+  },
+  {
+    "nombre": "Brindis",
+    "tag": "brindis"
+  },
+  {
+    "nombre": "Sin Carga",
+    "tag": "sin-carga"
+  },
+  {
+    "nombre": "Detalles del nuevo elemento01",
+    "tag": "nuevo-elemento01"
+  }
+]

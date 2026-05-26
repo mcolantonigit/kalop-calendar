@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurar Contraseña</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="passrestore.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="form-container">
+            <h1 class="validar escondido">Restauración solicitada</h1>
+            <p class="legend-tip validar escondido">La solicitud fue enviada al área de <strong>sistemas</strong>. Por favor, <strong>evite salir de esta página</strong> y comuniquese con dicho sector para obtener el <strong>PIN de confirmación</strong> y poder avanzar con esta operación.</p>
+            <h1 class="solicitar">Restaurar Contraseña</h1>
+            <p class="legend-tip solicitar">Ingrese su nombre de usuario o mail para solicitar la restauración.</p>
+            <form id="restore-form">
+                <label for="userAndMail" class="sr-only solicitar">Usuario o Mail</label>
+                <input class="solicitar" type="text" name="userAndMail" id="userAndMail" placeholder="Nombre de Usuario o Mail" required>
+                <button class="btn-submit blue solicitar" type="submit">Solicitar restauración</button>
+                <input class="validar escondido" type="password" name="pin" id="pin" placeholder="PIN de confirmación">
+                <label for="pin validar escondido" class="sr-only">PIN</label>
+                <button class="btn-submit blue validar escondido" type="submit">Validar</button>
+                <p class="error escondido">Error al registrarse.</p>
+                <button class="btn-volver" type="button">Volver</button>
+            </form>
+        </div>
+        
+    </main>
+</body>
+</html>

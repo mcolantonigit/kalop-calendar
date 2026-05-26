@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Contraseña</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="passchange.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="form-container">
+            <h1>Cambiar Contraseña</h1>
+            <p>Ingrese primero su contraseña actual. <br>Luego la nueva contraseña.</p>
+            <form id="change-form">
+                <label for="current-password" class="sr-only">Contraseña actual</label>
+                <input type="password" name="current-password" id="current-password" placeholder="Contraseña actual" required>
+                <label for="new-password" class="sr-only">Nueva contraseña</label>
+                <input type="password" name="new-password" id="new-password" placeholder="Nueva contraseña" required>
+                <label for="new-password2" class="sr-only">Repita contraseña</label>
+                <input type="password" name="new-password2" id="new-password2" placeholder="Repita contraseña" required>
+                <button class="btn-submit blue" type="submit">Cambiar Contraseña</button>
+                <p class="error escondido">Error al registrarse.</p>
+                <button class="btn-volver" type="button">Volver</button>
+            </form>
+        </div>
+        
+    </main>
+</body>
+</html>

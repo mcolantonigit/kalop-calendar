@@ -1,0 +1,459 @@
+body{
+    margin: 0;
+    padding: 0;
+    /*min-width: 412px;*/
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-rows: min-content 3fr;
+    /*grid-template-columns: minmax(415px,1fr) 2fr;*/
+    grid-template-columns: 1fr 3fr;
+    padding: 2dvw 12dvw;
+    gap: 30px;
+
+    --color-uno: #c81c1a; /*COLOR QUE VARIAS DESDE EL JS*/
+}
+
+.telon{
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+
+}
+
+.silueta{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    animation: zoom 1s cubic-bezier(1,0,.83,.88) 1.5s forwards;
+}
+
+.silueta-blanca-borde{
+    display: block;
+    background-color: white;
+    outline: 20px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+.silueta-blanca{
+    display: block;
+    position: relative;
+    transform: scale(1.01);
+    background-color: white;
+    outline: 20px solid white;
+    aspect-ratio: 2/2;
+    width: 100vmin;
+    clip-path: polygon(0% 0%, 0% 100%, 11% 100%, 11% 11%, 37% 11%, 37% 55%, 63% 11%, 89% 11%, 89% 89%, 63% 89%, 37% 45%, 37% 89%, 11% 89%, 11% 100%, 100% 100%, 100% 0%);
+}
+.cortina-blanca{
+    position: absolute;
+    clip-path: circle(50vmin at 50% 50%);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    transform: scale(150%);
+    animation: contraer 1s cubic-bezier(1,0,.83,.88) 1.5s forwards;;
+}
+
+.cortina-azul{
+    position: absolute;
+    clip-path: circle(50vmin at 50% 50%);
+    box-sizing: border-box;
+    background-color: #01aef0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    animation: 
+        expandir 1s cubic-bezier(1,0,.83,.88) forwards,
+        contraer 1s cubic-bezier(1,0,.83,.88) 1.5s forwards;
+}
+
+.cortina-naranja{
+    position: absolute;
+    clip-path: circle(50vmin at 50% 50%);
+    box-sizing: border-box;
+    background-color: #ed7004;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    animation: 
+        expandir 1s cubic-bezier(1,0,.83,.88) .5s forwards,
+        contraer 1s cubic-bezier(1,0,.83,.88) 1.5s forwards;
+}
+
+.aside{
+    box-sizing: border-box;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: fit-content 1fr;
+    justify-items: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.icono{
+    aspect-ratio: 200/233;
+    width: 60%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.icono::before{
+    content: '';
+    background-image: url(images/icono.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.panel-tresdias{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width:90%;
+}
+
+.tresdias-hoy, .tresdias-ayer, .tresdias-mañana{
+    box-sizing: border-box;
+    background-color: var(--color-uno);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.tresdias-hoy{
+    grid-column: span 2;
+    grid-row: 1/2;
+    aspect-ratio: 3/2;
+}
+
+.panel-tresdias h2{
+    margin: 10px 0 5px 0;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 100;
+}
+
+
+.tresdias-foto-hoy{
+    width: 100%;
+    aspect-ratio: 3/2;
+    background-image: url(images/asado-chorizo.png);
+    border-radius: 5px;
+    background-size: 115%;
+    background-position: center 80%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+    overflow: wrap;
+    text-wrap: balance;
+}
+
+.tresdias-foto-ayer, .tresdias-foto-mañana{
+    background-image: url(images/asado-chorizo.png);
+    background-size: cover;
+    border-radius: 5px;
+    width: 100%;
+    aspect-ratio: 3/2;
+}
+
+.header{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+h1{
+    position: relative;
+    box-sizing: border-box;
+    min-width:65%;
+    background-color: #303030;
+    color: white;
+    padding: 15px 20px 15px 50px;
+    border-radius: 40px 0 0 40px;
+    margin: 0;
+    right: -12dvw;
+    font-size: 1.5em;
+}
+
+.main{
+    align-self: start;
+}
+
+.calendario{
+    /*width: 100%;*/
+    box-sizing: border-box;
+    background-color: var(--color-uno);
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+}
+
+.calendario__header{
+    display: grid;
+    grid-template-columns: repeat(5, 10dvw);
+
+}
+
+.calendario__header h2{
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 100;
+    margin: 10px 0 5px 0;
+}
+
+.calendario__tabla{/*a traves del tamaño de las comunas determina el tamaño de todo lo demas*/
+    display: grid;
+    grid-template-columns: repeat(5, 10dvw);
+    grid-auto-rows: 1fr;
+    gap: 2px;
+}
+
+.fondo{
+    aspect-ratio: 3/2;
+    background-image: url(images/comida-test.jpg);
+    background-size: 200%;
+    background-position: center 5%;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tabla__celda{
+    box-sizing: border-box;
+    background-color: #ffffff43;
+    height: 100%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
+    transition: background-color 1s;
+    padding: 10px;
+}
+
+.tabla__celda:hover{
+    background-color: white;
+    transition-duration: 1s;
+}
+/*
+.tabla__celda:not(:hover) {
+    transition: background-color 1s;
+}
+*/
+.hoy{
+    padding: 6px;
+    border: 4px solid #ffb700;
+    box-shadow: 3px 3px 25px #ffb700;
+    animation: parpadear 2s linear 0s infinite alternate both;
+}
+
+.celda__dia{
+    margin: 0;
+    text-align: end;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: min-content;
+    text-shadow: 0px 0cap 5px white;
+    
+}
+
+.celda__comida{
+    font-size: 1vw;
+    margin: 0;
+    text-align: center;
+    align-content: end;
+    height: 100%;
+    text-shadow:
+  0 0 2px #ffffff,
+  0 0 4px #ffffff,
+  0 0 8px #ffffff,
+  0 0 16px #ffffff,
+  0 0 32px #ffffff;
+
+    overflow: wrap;
+    text-wrap: balance;
+}
+
+
+
+/*------------ANIMACIONES-------------*/
+
+@keyframes parpadear {
+    from{
+        box-shadow: 1px 1px 25px #ffb700;
+    }
+    
+    to{
+        box-shadow: 3px 3px 50px #ffb700;
+    }
+}
+
+/*_____INICIANDO_____*/
+
+@keyframes icono-start {
+    from{
+        transform: translate(34vw,20vh);
+        box-shadow: none;
+    }
+    to{
+        transform: translate(0px,0px);
+        box-shadow: 3px 3px 25px #ffb700;
+    }
+}
+
+
+/*-------------MEDIA QUERIES------------------*/
+@media screen and (max-width:1400px){
+    .celda__comida{
+        font-size: .7vw;
+    }
+    .calendario__header h2{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:930px){
+
+    body{
+        grid-template-rows: repeat(2, min-content);
+        grid-template-columns: 1fr;
+        padding: 2dvw;
+    }
+
+    .silueta{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .silueta-blanca{
+        width: 100%;
+    }
+
+    .aside{
+        grid-template-rows: min-content 1fr;
+        grid-row: 1/2;
+        grid-row: inherit;
+        padding: 0;
+        align-items: center;
+
+    }
+
+    .icono{
+        aspect-ratio: 200/233;
+        width: initial;
+        width: 60%;
+        margin: 20px 0;
+    }
+
+    .header{
+        grid-row: 2/3;
+        margin: 50px 0px;
+    }
+
+    h1{
+        right: -2dvw;
+    }
+    .main{
+        grid-row: 3/4;
+        justify-self: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .calendario{
+        margin: auto;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .calendario__header{
+        display: none;
+    }
+
+    .calendario__tabla{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        box-sizing: border-box;
+        gap: 5px;
+    }
+
+    .fondo{
+        aspect-ratio: 3/2;
+        background-size: cover;
+        background-position: center 20%;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    /*.tabla__celda{
+        min-width: fit-content;
+        min-height: fit-content;
+    }*/
+
+    .celda__comida{
+        align-content: end;
+        box-sizing: border-box;
+        height: fill;
+        font-size: 1em;
+        /*min-width: fit-content;
+        min-height: fit-content;*/
+    }
+
+    /*.celda__dia{
+        min-width: fit-content;
+        min-height: fit-content;
+    }*/
+
+    .panel-tresdias{
+        width: 90%;
+    }
+
+    .blank{
+    display: none;
+    }
+}
+
+.escondido{
+    display: none;
+}
+
+@keyframes expandir {
+    from{transform: scale(0%)}
+    to{transform: scale(150%)}
+}
+
+@keyframes contraer {
+    from{transform: scale(150%)}
+    to{transform: scale(0%)}
+}
+@keyframes zoom {
+    from{transform: scale(1)}
+    to{transform: scale(6) translateX(-9%)}
+}
